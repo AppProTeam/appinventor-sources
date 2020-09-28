@@ -17,19 +17,27 @@ import com.google.appinventor.components.runtime.*;
 @UsesLibraries(libraries = "cct.jar,cct.aar")
 public class CustomTabs extends AndroidNonvisibleComponent{
     public Context context;
-    public boolean showTitle;
-    public boolean hideUrlBar;
-    public int toolBarColor;	
-    public CustomTabsIntent.Builder builder;
+    private CustomTabService cts;
+    //public boolean showTitle;
+    //public boolean hideUrlBar;
+    //public int toolBarColor;	
+    //public CustomTabsIntent.Builder builder;
         
     public CustomTabs(ComponentContainer container) {
         super(container.$form());
         context = container.$context();
-	ShowTitle(true);
-	ToolBarColor(225);
-	HideUrl(false);    
+	//ShowTitle(true);
+	//ToolBarColor(225);
+	//HideUrl(false);    
     }
+
+@SimpleFunction
+public void Go(String url){
+    cts = new CustomTabService(context);
+    cts.launchUrl(url);
+}
         
+/*
     @SimpleProperty()
     public void ShowTitle(boolean bool){
         showTitle = bool;
@@ -62,4 +70,5 @@ public class CustomTabs extends AndroidNonvisibleComponent{
 	builder.setToolbarColor(toolBarColor);
 	builder.setShowTitle(showTitle);    
     }		
+*/
 }
