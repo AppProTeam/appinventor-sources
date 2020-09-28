@@ -791,6 +791,9 @@ public class YaVersion {
   // For CONTACTPICKER_COMPONENT_VERSION 6:
   // - The ContactUri property was added
   public static final int CONTACTPICKER_COMPONENT_VERSION = 6;
+  
+  // For CustomTabs
+  public static final int CUSTOMTABS_COMPONENT_VERSION = 1;
 
   // For DATEPICKER_COMPONENT_VERSION 2:
   // The datepicker dialog was updated to show the current date
