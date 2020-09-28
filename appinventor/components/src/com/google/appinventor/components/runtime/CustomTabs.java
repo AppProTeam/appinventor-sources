@@ -1,5 +1,6 @@
 package com.google.appinventor.components.runtime;
 
+import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
 import androidx.browser.customtabs.CustomTabsIntent;
@@ -18,6 +19,7 @@ import com.google.appinventor.components.runtime.util.*;
 @UsesLibraries(libraries = "cct.jar,cct.aar")
 public class CustomTabs extends AndroidNonvisibleComponent{
     public Context context;
+    private Activity activity;
     private CustomTabService cts;
     //public boolean showTitle;
     //public boolean hideUrlBar;
@@ -27,6 +29,7 @@ public class CustomTabs extends AndroidNonvisibleComponent{
     public CustomTabs(ComponentContainer container) {
         super(container.$form());
         context = container.$context();
+        activity = Activity(context);
 	//ShowTitle(true);
 	//ToolBarColor(225);
 	//HideUrl(false);    
@@ -34,7 +37,7 @@ public class CustomTabs extends AndroidNonvisibleComponent{
 
 @SimpleFunction
 public void Go(String url){
-    cts = new CustomTabService(context);
+    cts = new CustomTabService(activity);
     cts.launchUrl(url);
 }
         
