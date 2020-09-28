@@ -24,7 +24,7 @@ public class CustomTabs extends AndroidNonvisibleComponent{
     private CustomTabService cts;
     //public boolean showTitle;
     //public boolean hideUrlBar;
-    //public int toolBarColor;	
+    public int toolBarColor;	
     //public CustomTabsIntent.Builder builder;
         
     public CustomTabs(ComponentContainer container) {
@@ -38,7 +38,7 @@ public class CustomTabs extends AndroidNonvisibleComponent{
 
 @SimpleFunction
 public void Go(String url){
-    cts = new CustomTabService(activity, getPrimaryColor());
+    cts = new CustomTabService(activity, toolBarColor);
     cts.launchUrl(url);
 }
         
@@ -49,12 +49,14 @@ public void Go(String url){
 	update();    
     }
         
+*/
     @SimpleProperty()
     public void ToolBarColor(int color){
         toolBarColor = color;
-	    update();
+	    //update();
     }
         
+/*
     @SimpleProperty()
     public void HideUrl(boolean bool){
          hideUrlBar = bool;
