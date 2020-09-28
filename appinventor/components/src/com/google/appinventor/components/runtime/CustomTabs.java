@@ -29,7 +29,7 @@ public class CustomTabs extends AndroidNonvisibleComponent{
     public CustomTabs(ComponentContainer container) {
         super(container.$form());
         context = container.$context();
-        activity = Activity(context);
+        activity = container.$context();
 	//ShowTitle(true);
 	//ToolBarColor(225);
 	//HideUrl(false);    
