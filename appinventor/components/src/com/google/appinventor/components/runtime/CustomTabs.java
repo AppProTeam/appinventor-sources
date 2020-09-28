@@ -3,6 +3,7 @@ package com.google.appinventor.components.runtime;
 import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
+import android.graphics.Color;
 import androidx.browser.customtabs.CustomTabsIntent;
 
 import com.google.appinventor.components.annotations.*;
@@ -37,7 +38,7 @@ public class CustomTabs extends AndroidNonvisibleComponent{
 
 @SimpleFunction
 public void Go(String url){
-    cts = new CustomTabService(activity);
+    cts = new CustomTabService(activity, getPrimaryColor());
     cts.launchUrl(url);
 }
         
