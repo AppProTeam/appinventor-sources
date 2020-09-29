@@ -18,7 +18,7 @@ import com.google.appinventor.components.runtime.util.CustomTabService;
         nonVisible = true,
         iconName = "images/chromecustomtab.png")
 @SimpleObject
-@UsesLibraries(libraries = "cct.jar")
+@UsesLibraries(libraries = "jfxmobile.jar")
 public class CustomTabs extends AndroidNonvisibleComponent{
     public Context context;
     private Activity activity;
