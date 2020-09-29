@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.net.Uri;
 import android.graphics.Color;
+import android.support.customtabs.*;
 import androidx.browser.customtabs.CustomTabsIntent;
 
 import com.google.appinventor.components.annotations.*;
@@ -17,7 +18,7 @@ import com.google.appinventor.components.runtime.util.*;
         nonVisible = true,
         iconName = "images/chromecustomtab.png")
 @SimpleObject
-@UsesLibraries(libraries = "cct.jar,cct.aar")
+@UsesLibraries(libraries = "cct.jar")
 public class CustomTabs extends AndroidNonvisibleComponent{
     public Context context;
     private Activity activity;
