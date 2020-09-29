@@ -10,7 +10,7 @@ import androidx.browser.customtabs.CustomTabsIntent;
 import com.google.appinventor.components.annotations.*;
 import com.google.appinventor.components.common.*;
 import com.google.appinventor.components.runtime.*;
-import com.google.appinventor.components.runtime.util.*;
+import com.google.appinventor.components.runtime.util.CustomTabService;
 
 @DesignerComponent(version = YaVersion.CUSTOMTABS_COMPONENT_VERSION,
         description = "Non-visible component to launch chrome custom tabs",
