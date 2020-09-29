@@ -122,7 +122,7 @@
           depends="Barcode"
           description="Copies libraries needed for components into the public build directory">
     <property name="support.dir" location="${lib.dir}/android/support" />
-    <property name="support.version" value="28.0.0" />
+    <property name="support.version" value="29.0.0" />
     <copy toFile="${public.deps.dir}/osmdroid.aar" file="${lib.dir}/osmdroid/osmdroid-5.6.6.aar" />
     <copy toFile="${public.deps.dir}/osmdroid.jar" file="${lib.dir}/osmdroid/osmdroid-5.6.6.jar" />
     <copy toFile="${public.deps.dir}/webrtc.jar"
