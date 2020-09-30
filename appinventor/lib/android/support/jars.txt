@@ -1,6 +1,8 @@
 annotation.jar
 appcompat.jar
 asynclayoutinflater.jar
+browser.jar
+cardview.jar
 collection.jar
 constraintlayout.jar
 constraintlayout-solver.jar
