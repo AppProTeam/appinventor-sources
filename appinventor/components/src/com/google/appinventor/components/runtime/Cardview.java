@@ -24,7 +24,6 @@ import java.io.IOException;
         description = "A view which lets user to add child views as cards",
         category = ComponentCategory.LAYOUT)
 @SimpleObject
-@UsesLibraries(libraries = "cardview.jar")
 public class Cardview extends AndroidViewComponent implements Component,ComponentContainer{
     public Activity activity;
     public CardView cardView;
