@@ -26,7 +26,7 @@ import java.io.IOException;
 @SimpleObject
 public class Cardview extends AndroidViewComponent implements Component,ComponentContainer{
     public Activity activity;
-    public CardView cardView;
+    public Card cardView;
     public final Handler androidUIHandler = new Handler();
     public Form form;
     public AlignmentUtil alignmentUtil;
@@ -51,7 +51,7 @@ public class Cardview extends AndroidViewComponent implements Component,Componen
         super(container);
         activity = container.$context();
         form = container.$form();
-        cardView = new CardView(activity);
+        cardView = new Card(activity);
         cardView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
