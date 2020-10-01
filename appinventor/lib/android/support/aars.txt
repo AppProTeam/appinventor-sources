@@ -1,6 +1,5 @@
 appcompat.aar
 asynclayoutinflater.aar
-cardview.aar
 constraintlayout.aar
 coordinatorlayout.aar
 core.aar
