@@ -686,4 +686,7 @@ public interface Images extends Resources {
   
   @Source("com/google/appinventor/images/chromecustomtab.png")
   ImageResource chromecustomtab();
+  
+   @Source("com/google/appinventor/images/cardview.png")
+  ImageResource cardview();
 }
