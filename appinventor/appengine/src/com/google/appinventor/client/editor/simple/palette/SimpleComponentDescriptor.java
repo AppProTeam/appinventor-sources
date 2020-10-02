@@ -13,6 +13,7 @@ import com.google.appinventor.client.editor.simple.SimpleEditor;
 import com.google.appinventor.client.editor.simple.components.MockBall;
 import com.google.appinventor.client.editor.simple.components.MockButton;
 import com.google.appinventor.client.editor.simple.components.MockCanvas;
+import com.google.appinventor.client.editor.simple.components.MockCardview;
 import com.google.appinventor.client.editor.simple.components.MockCheckBox;
 import com.google.appinventor.client.editor.simple.components.MockSwitch;
 import com.google.appinventor.client.editor.simple.components.MockCircle;
@@ -172,6 +173,7 @@ public final class SimpleComponentDescriptor {
     bundledImages.put("images/arduino.png", images.arduino());
     bundledImages.put("images/magneticSensor.png", images.magneticSensor());
     bundledImages.put("images/chromecustomtab.png", images.chromecustomtab());
+    bundledImages.put("images/cardview.png", images.cardview());
 
     imagesInitialized = true;
   }
@@ -398,6 +400,8 @@ public final class SimpleComponentDescriptor {
       return new MockButton(editor);
     } else if (name.equals(MockCanvas.TYPE)) {
       return new MockCanvas(editor);
+    } else if (name.equals(MockCardview.TYPE)) {
+      return new MockCardview(editor);
     } else if (name.equals(MockCheckBox.TYPE)) {
       return new MockCheckBox(editor);
     } else if (name.equals(MockSwitch.TYPE)) {
